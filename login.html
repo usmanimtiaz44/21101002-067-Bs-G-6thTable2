@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background-color:#f4f4f4}table{border-collapse:collapse;width:80%;box-shadow:0 4px 8px rgba(0,0,0,0.1);background-color:#fff;border-radius:8px}th,td{border:1px solid #ddd;padding:12px;text-align:left}th{background-color:#3498db;color:#fff;text-transform:uppercase;letter-spacing:1px}tr:hover{background-color:rgba(52,152,219,0.1)}button{padding:6px;border:none;width:30px;cursor:pointer;width:40px;height:40px;background-color:transparent}button:before{font-size:20px}.edit-btn,.delete-btn{background-color:#e67e22;color:#fff}.edit-btn:before{content:"✏️"}.delete-btn:before{content:"🗑"}.status-btn{font-weight:bold;text-transform:uppercase;padding:10px;border:none;border-radius:4px;cursor:pointer}.not-paid{background-color:#f39c12;color:#fff;width: 120px;text-align: center;}.paid{background-color:#27ae60;color:#fff;width: 120px;text-align: center;}.processing{background-color:#8e44ad;color:#fff;width: 120px;text-align: center;}
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Invoice</th><th>Name</th><th>Date</th><th>Status</th><th>Amount</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NA</td><td>Pratham</td><td>01/04/2022</td><td><button class="status-btn not-paid">not completed</button></td><td>22,000</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>INV_1</td><td>Doe</td><td>01/04/2022</td><td><button class="status-btn paid">Paid</button></td><td>23,000</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>INV_2</td><td>Cristian</td><td>01/04/2022</td><td><button class="status-btn processing">Processing</button></td><td>28,000</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>INV_3</td><td>Kiran</td><td>01/04/2022</td><td><button class="status-btn paid">Processing</button></td><td>25,000</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>INV_4</td><td>Kite</td><td>01/04/2022</td><td><button class="status-btn not-paid">completed</button></td><td>22,000</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
